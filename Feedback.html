@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dream Properties</title>
+    <style>
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff5f5;
+}
+/*nav styles*/
+
+.navbar{
+    background: rgb(71, 69, 69); font-family: calibri; padding-right: 15px;padding-left: 15px;padding-bottom: 10px;
+}
+.navdiv{
+    display: flex; align-items: center; justify-content: space-between;
+}
+.logo a{
+    font-size: 35px; font-weight: 600; color: white;
+}
+li{
+    list-style: none; display: inline-block;
+}
+li a{
+    color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      margin: 30px auto;
+      max-width: 1000px;
+      padding: 20px;
+    }
+
+    .form-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .stars {
+      display: flex;
+      gap: 5px;
+      margin-top: 10px;
+    }
+
+    .star {
+      font-size: 24px;
+      color: lightgray;
+      cursor: pointer;
+    }
+
+    .star.selected {
+      color: orange;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: limegreen;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .popup {
+      display: none;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .popup.show {
+      display: block;
+    }
+
+    .popup button {
+      margin-top: 10px;
+      background-color: lightgreen;
+    } .section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      margin: 30px auto;
+      max-width: 1000px;
+      padding: 20px;
+    }
+
+    .form-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 400px;
+      margin-left: 437px;
+      margin: auto ;
+      
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: #333;
+      font-size: 28px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #1a0303;
+      border-radius: 5px;
+    }
+
+    .stars {
+      display: flex;
+      gap: 5px;
+      margin-top: 10px;
+    }
+
+    .star {
+      font-size: 24px;
+      color: lightgray;
+      cursor: pointer;
+    }
+
+    .star.selected {
+      color: orange;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: rgb(119, 228, 119);
+      color: rgb(252, 252, 252);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+  background-color: #112506; 
+  transform: scale(1.05); 
+    }
+
+    .popup {
+      display: none;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .popup.show {
+      display: block;
+    }
+
+    .popup button {
+      margin-top: 10px;
+      background-color: lightgreen;
+    }  
+ h1{
+    
+    text-align: center;
+    font-size: 40px;
+    background-image: url(image/feedback.jpg);
+     background-size: cover;
+     background-position: center;
+     color: rgb(253, 252, 252);
+     padding-bottom: 250px;
+     padding-top: 80px;
+     margin-top: -1px;
+ }
+.feedback-subtitle{
+    background-color:  rgb(71, 69, 69);
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: -33px;
+    color: white;
+}
+/* Responsive Navbar */
+@media (max-width: 900px) {
+  .navdiv {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+  .navbar ul {
+    width: 100%;
+    padding-left: 0;
+    text-align: left;
+  }
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+/* Adjust footer for mobile */
+@media (max-width: 700px) {
+  footer .navbar {
+    padding: 10px 0;
+  }
+  .logo a {
+    font-size: 24px;
+  }
+  footer .navbar li {
+    display: inline-block;
+    margin: 2px 4px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 700px) {
+  .form-box{
+    display: inline-block;
+    max-width: 94vw;
+    padding: 20px 10px 40px 10px;
+  }
+  .form-box input,
+  .form-box textarea {
+    font-size: 15px;
+  }
+  
+  input, textarea {
+      max-width: 89vw; 
+      padding: 8px;
+      border: 1px solid #1a0303;
+      border-radius: 5px;
+      display: inline-block;
+}
+}
+    
+  </style>
+
+<header>
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="#">Dream Properties</a></div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Terms of use.html">Terms of use</a></li>
+        <li><a href="About us.html">About Us</a></li>
+        <li><a href="Contact us.html">Contact Us</a></li>
+        <li><a href="Rent.html">Rent</a></li>
+        <li><a href="Buy.html">Buy</a></li>
+        <li><a href="Reviews.html">Reviews</a></li>
+        <li><a href="feedback.html">Feedback</a></li> 
+      </ul>
+    </div>
+  </nav>
+</header>
+<section class="feedback">
+  <h1>Feedback</h1>
+</section>
+    <h2 class="feedback-subtitle">Rate your experience using our site</h2>
+<div class="form-box">
+  <h2>Feedback Form</h2>
+  <form onsubmit="submitFeedback(event)">
+    <label for="name">Name</label>
+    <input type="text" id="name" required>
+
+    <label for="surname">Surname</label>
+    <input type="text" id="surname" required>
+
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" required>
+
+    <label>Leave a review</label>
+    <div class="stars" id="stars">
+      <span class="star" data-value="1">&#9733;</span>
+      <span class="star" data-value="2">&#9733;</span>
+      <span class="star" data-value="3">&#9733;</span>
+      <span class="star" data-value="4">&#9733;</span>
+      <span class="star" data-value="5">&#9733;</span>
+    </div>
+
+    <input type="hidden" id="rating" required>
+
+    <label for="feedback">Feedback</label>
+    <textarea id="feedback" rows="5" required></textarea>
+
+    <div class="button:hover">
+    <button type="submit">Submit feedback</button>
+    </div>
+  </form>
+</div>
+
+<footer>
+  <nav class="navbar">
+    <div>
+      <div class="logo"><a href="#">Dream Properties</a></div>
+      <ul>
+        <li><a href="index.html">Home |</a></li>  
+        <li><a href="Terms of use.html">Terms of use |</a></li>
+        <li><a href="About us.html">About Us |</a></li>
+        <li><a href="Contact us.html">Contact Us |</a></li>
+        <li><a href="Rent.html">Rent |</a></li>
+        <li><a href="Buy.html">Buy |</a></li>
+        <li><a href="Reviews.html">Reviews |</a></li>
+        <li><a href="Feedback.html">Feedback |</a></li>
+      </ul>
+      <p>&copy; Dream Properties 2025</p>
+    </div>
+  </nav>
+</footer>
+<script>
+   
+
+    const stars = document.querySelectorAll('.star');
+    const ratingInput = document.getElementById('rating');
+  
+    // Handle star rating selection
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        const value = star.getAttribute('data-value');
+        ratingInput.value = value;
+  
+        stars.forEach(s => {
+          s.classList.remove('selected');
+          if (s.getAttribute('data-value') <= value) {
+            s.classList.add('selected');
+          }
+        });
+      });
+    });
+  
+    // Handle form submission
+    function submitFeedback(event) {
+      event.preventDefault(); 
+  
+      const name = document.getElementById('name').value.trim();
+      const surname = document.getElementById('surname').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const rating = document.getElementById('rating').value;
+      const feedback = document.getElementById('feedback').value.trim();
+  
+      if (!name || !surname || !email || !rating || !feedback) {
+        alert("Please fill out all fields and select a star rating.");
+        return;
+      }
+  
+      // Clear the form
+      document.getElementById('name').value = '';
+      document.getElementById('surname').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('feedback').value = '';
+      ratingInput.value = '';
+      
+      // Reset stars
+      stars.forEach(star => {
+        star.classList.remove('selected');
+      });
+  
+      // Show success message
+      alert("Thank you for your feedback!"); 
+  
+      
+     
+    }
+</script>
+    
+  </script>
+  
+</body>
+</html>
