@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dream Properties</title>
+    <style>
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff5f5;
+}
+/*nav styles*/
+.navbar{
+    background: rgb(71, 69, 69); font-family: calibri; padding-right: 15px;padding-left: 15px;padding-bottom: 10px;
+}
+.navdiv{
+    display: flex; align-items: center; justify-content: space-between;
+}
+.logo a{
+    font-size: 35px; font-weight: 600; color: white;
+}
+li{
+    list-style: none; display: inline-block;
+}
+li a{
+    color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.Reviews-title{
+    font-size: 28px;
+    padding: 40px 100px;
+  text-align: center;
+  background-image: url(image/review.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-bottom: 170px;
+}
+.reviews-heading{
+    text-align: center;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-top: -10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.review{
+    text-align: center;
+    padding: 20px 40px;
+    background-color: #ccc;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 700px;
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-bottom: 70px;
+}
+h2{
+    text-align: center;
+}
+.reviewer-name{
+    font-weight: bolder;
+    font-size: larger;
+}
+/* Responsive Navbar */
+@media (max-width: 900px) {
+  .navdiv {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+  .navbar ul {
+    width: 100%;
+    padding-left: 0;
+    text-align: left;
+  }
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+/* Adjust footer for mobile */
+@media (max-width: 700px) {
+  footer .navbar {
+    padding: 10px 0;
+  }
+  .logo a {
+    font-size: 24px;
+  }
+  footer .navbar li {
+    display: inline-block;
+    margin: 2px 4px;
+    font-size: 13px;
+  }
+  
+  .review {
+    max-width: 98vw;
+    padding: 20px 10px 40px 10px;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"><a href="#">Dream Properties</a></div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Terms of use.html">Terms of use</a></li>
+          <li><a href="About us.html">About Us</a></li>
+          <li><a href="Contact us.html">Contact Us</a></li>
+          <li><a href="Rent.html">Rent</a></li>
+          <li><a href="Buy.html">Buy</a></li>
+          <li><a href="Reviews.html">Reviews</a></li>
+          <li><a href="Feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header> 
+    <section class="Reviews-title">
+        <h1>Reviews</h1>
+    </section>
+    <h2 class="reviews-heading">What do our users say about our website?</h2>
+  
+    <div class="review">
+      <p class="reviewer-name">Jet Black.</p>
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>“Thanks to this site I was able to find the perfect home for my increasing family”</p>
+    </div>
+
+    <div class="review">
+        <p class="reviewer-name">John Pork</p>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>“This site is so easy to use and navigate 10/10 would recommend”</p>
+      </div>
+
+      <div class="review">
+        <p class="reviewer-name">Tim Chesse.</p>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>“I was able to find an appartment that cater for my 4 pitbulls thanks to this site.Its crazy how it is free with no subscription”</p>
+      </div>
+
+      <div class="review">
+        <p class="reviewer-name">John D.</p>
+        <p>⭐⭐⭐⭐</p>
+        <p>“As a first time renter in the city this site made it easy to find a house that is within my budget range”</p>
+      </div>
+
+      <div class="review">
+        <p class="reviewer-name">Walter White.</p>
+        <p>⭐⭐⭐⭐</p>
+        <p>“This website helped me find a content house where I can make content with all my bros”</p>
+      </div>
+
+      <div class="review">
+        <p class="reviewer-name">Gustavo Fring.</p>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>“Finding a house to rent has never been eaiser thanks to this website”</p>
+      </div>
+
+    
+  
+  <footer>
+    <nav class="navbar">
+      <div>
+        <div class="logo"><a href="#">Dream Properties</a></div>
+        <ul>
+          <li><a href="index.html">Home |</a></li>
+          <li><a href="Terms of use.html">Terms of use |</a></li>
+          <li><a href="About us.html">About Us |</a></li>
+          <li><a href="Contact us.html">Contact Us |</a></li>
+          <li><a href="Rent.html">Rent |</a></li>
+          <li><a href="Buy.html">Buy |</a></li>
+          <li><a href="Reviews.html">Reviews |</a></li>
+          <li><a href="Feedback.html">Feedback |</a></li>
+        </ul>
+        <p>&copy; Dream Properties 2025</p>
+      </div>
+    </nav>
+  </footer>
+
+</body>
+</html>
